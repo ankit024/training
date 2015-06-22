@@ -1,0 +1,165 @@
+body {
+    background:url(image.jpg);
+    background-size: 1524px 1800px;
+    
+}
+.header{
+    height: 70px;
+    margin: 40px 100px 0px 100px;
+}
+.box2{
+     float: right;
+    width: 190px;
+    height: 80px;
+    margin:-95px -190px 0px 0px;
+}
+.section1, {
+    height: 600px;
+    margin: 40px 100px 0px 100px;
+}
+.nav {
+    padding-left: 100px;
+
+}
+.section2 {
+    height: 600px;
+    margin-left: 100px;
+}
+.box{
+    width: 1300px;
+    height: 600px;
+    background-image: url("1.jpg");
+margin-top: -20px;
+
+}
+.box1{
+    height:540px ;
+    width: 300px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+    padding-top: 30px;
+    background-color: #2C1608;
+    float: left;
+
+}
+.button{
+    width: 213px;
+    height: 50px;
+    opacity: 0.2;
+}
+.button1{
+margin-left: 40px;
+
+}
+
+
+.footer {
+
+    height: 150px;
+
+}
+p{
+    color:red;
+}
+h2{
+    color: red;
+    padding-left: 50px;
+}
+.p1{
+    color:white;
+    padding-left:50px;
+}
+ .h1{
+  position: relative;
+    left: 40px;
+    padding-top: 50px;
+    color: red;
+}
+.checkdate{
+    width: 50px;
+    max:31;
+    min:1;
+    margin-left: 50px;
+}
+.checkyear{
+    width: 80px;
+    max:2050;
+    min:2015;
+}
+.checkroom{
+    width: 60px;
+    max:20;
+    min:1;
+}
+.checkmonth{
+    width: 50px;
+    max:12;
+    min:1;
+}
+.checkperson{
+    width: 50px;
+    max:10;
+    min:1;
+}
+#image1{
+    margin-left: 100px;
+    height: 500px;
+    width: 1300px;
+}
+#image2{
+    width: 220px;
+    height: 150px;
+    padding-left: 50px;
+}
+h3 {
+    text-align: justify;
+    position: relative;
+    top: -355px;
+    left: 240px;;
+    color: white;
+}
+    ul{
+        position: relative;
+        left: 50px;
+        color: white;
+
+}
+    hr{
+        color: black;
+    }
+
+.p2{
+    position: relative;
+    top:-100px;
+    float: right;
+    color: white;
+}
+th{
+    padding-left: 245px;
+    color: white;
+opacity: 0.3;
+}
+.table{
+    padding-left: 200px;
+    opacity: 0.5;
+}
+.pos{
+    position: relative;
+    left: 40px;
+    color: red;
+
+}
+.pos1{
+    position: relative;
+    right: 270px;
+    top: -170px;
+    color: red;
+    float: right;
+}
+.p3{
+   text-align:center;
+}
+.button2{
+    opacity:0 ;
+}
