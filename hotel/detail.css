@@ -1,0 +1,82 @@
+#det{
+    padding-top: 50px;
+}
+#cust
+{
+    background-image: url("image5.jpg");
+    float:left;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 1300px;
+    margin-left: 100px;
+    margin-right: 50px;
+    background-size:100%;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.text
+{
+    text-align: center;
+}
+
+
+.pad
+{
+    padding-left: 50px;
+    font-size: 20px;
+    color: brown;
+}
+.pad1{
+    padding-left: 50px;
+    font-size: 15px;
+    color: brown;
+
+}
+.pad2{
+
+    text-shadow: 3px 4px 16px black;
+    font-size: 35px;
+    color: brown;
+}
+.button4{
+    width: 213px;
+    height: 50px;
+    opacity: 0.8;
+}
+.book{
+    background-image: url("image5.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    margin-left: 317px;
+    margin-right: 50px;
+    background-size: 100% 150%;
+    padding-left: 213px;
+    width: 655px;
+}
+.book2 {
+    width: 213px;
+    height: 50px;
+    margin-left: 51px;
+    opacity:0.8;
+    margin-top: 20px;
+
+}
+.logo {
+    margin-left: 250px;
+    top: -140px;
+    width: 300px;
+    height: 168px;
+   background-image:url("logo.jpg");
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
