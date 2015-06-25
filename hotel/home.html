@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
     <link href="home.css" rel="stylesheet" type="text/css">
+    <link href="detail.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="header">
-    <p>HOTEL</p><p style="float: right;font-size: 25px">0-895-806-47-87</p>
-    <p  style="font-size: 40px; margin-top: -20px"> FIVE STAR</p>
-    <p style="font-size: 15px;margin-top: -40px"> True Luxery</p>
+    <p class="blink">HOTEL</p><p style="float: right;font-size: 25px">0-895-806-47-87</p>
+    <p class="blink" style="font-size: 40px; margin-top: -20px"> FIVE STAR</p>
+    <p class=blink style="font-size: 15px;margin-top: -40px"> True Luxery</p>
+    <div class="logo"></div>
     <div>
         <p><marquee id="mar">Special Offer!When it�s time for a getaway, Hotel Five Star offers unique travel packages and hotel discounts.</marquee></p>
     </div>
@@ -24,12 +26,12 @@
     <img id="image1" src="img1.jpg">
 </div>
 <div class="nav">
-    <button class="button" type="button" onclick="window.location.href=''" ><b>HOME PAGE</b></button>
-    <button class="button" type="button" onclick="window.location.href=''" ><b>GALLERY</b></button>
-    <button class="button" type="button" onclick="window.location.href=''" ><b>SERVICES</b></button>
-    <button class="button" type="button" onclick="window.location.href=''" ><b>RESTURENT</b></button>
+    <button class="button" type="button" onclick="window.location.href='home.html'" ><b>HOME PAGE</b></button>
+    <button class="button" type="button" onclick="window.location.href='gallary.html'" ><b>GALLERY</b></button>
+    <button class="button" type="button" onclick="window.location.href='http://luxurytravel.about.com/od/hotelandresorts/tp/Five-Star-Hotels-Great-Hospitality-Service.htm'" ><b>SERVICES</b></button>
+    <button class="button" type="button" onclick="window.location.href='http://www.thelalit.com/hotels-in-mumbai/dining-en.html'" ><b>RESTAURANT</b></button>
     <button class="button" type="button" onclick="window.location.href='booking.html'" ><b>BOOKING</b></button>
-    <button class="button" type="button" onclick="window.location.href=''" ><b>ABOUT US</b></button>
+    <button class="button" type="button" onclick="window.location.href='profile.html'" ><b>ABOUT US</b></button>
 </div>
 <div class="section2">
     <div class="box">
@@ -40,22 +42,22 @@
             <p class="p1">
                 Check In:
             </p>
-            <input class="checkdate" type="number" value="dd">
-            <input class="checkmonth" type="number" value="mm">
-            <input class="checkyear" type="number" value="yy"><br /><br />
+            <input class="checkdate" type="number" value="dd" max="31" min="1" required>
+            <input class="checkmonth" type="number" value="mm" max="12" min="1" required>
+            <input class="checkyear" type="number" value="yy" max="2050" min="2015" required><br /><br />
             <p class="p1">Check Out</p>
-            <input class="checkdate" type="number">
-            <input class="checkmonth" type="number">
-            <input class="checkyear" type="number"><br /><br />
+            <input class="checkdate" type="number" value="dd" max="31" min="1" required>
+            <input class="checkmonth" type="number" value="mm" max="12" min="1" required>
+            <input class="checkyear" type="number" value="yy" max="2050" min="2015" required><br /><br />
             <span class="p1"><b> Persons: </b></span>
-            <input class="checkperson" type="number"><br /><br />
+            <input class="checkperson" type="number" max="10" min="1" required><br /><br />
             <span class="p1"><b> Rooms: </b></span>
-            <input class="checkroom" type="number"><br/><br />
+            <input class="checkroom" type="number" max="50" min="1" required><br/><br />
             <button class="button1" type="button" onclick="window.location.href=''" ><b>CHECK AVAILABILTY</b></button>
         </div>
         <h1 class="h1">Five Star Is Happy To Welcome You!</h1>
-        <video id="vid" width="270" controls>
-            <source src="movie.mp4" type="video/mp4"> </source>
+        <video id="vid" width="270" controls="true">
+            <source src="movie1.mp4" type="video/mp4">
         </video>
         <hr>
         <h1 class="pos">Special Offers</h1>
@@ -113,10 +115,10 @@
                     <li>India</li>
                 </ul>
             <td>
-                <a id="font1" href="www.google.com"><font color="#0e1f5b" size="+3"><i class="fa fa-facebook-square"></i></font></a>
-                <a class="font" href="www.google.com"><font color="#2FC2EF" size="+3"><i class="fa fa-twitter-square" ></i></font></a>
-                <a class="font" href="www.google.com"><font color="#0077B5" size="+3"><i class="fa fa-linkedin-square"></i></font></a>
-                <a class="font" href="www.google.com"><font color="#d34836" size="+3"><i class="fa fa-google-plus-square"></i></font></a>
+                <a id="font1" href="https://www.facebook.com/"><font color="#0e1f5b" ><i class="fa fa-facebook-square fa-2x"></i></font></a>
+                <a class="font" href="https://twitter.com/?gclid=CKaBg9iPqsYCFVIqjgoddrUASg&gclsrc=aw.ds"><font  color="#2FC2EF"><i class="fa fa-twitter-square fa-2x" ></i></font></a>
+                <a class="font" href="https://in.linkedin.com/job/jobs-in-india/?trk=li_sem_cmktg_insem_Brand_%5Bkeywordtext%5D&gclid=CMqWvv2PqsYCFRYVjgod5iAAkg"><font color="#0077B5"><i class="fa fa-linkedin-square fa-2x"></i></font></a>
+                <a class="font" href="https://plus.google.com/up/accounts/upgrade/?continue=https://plus.google.com/"><font color="#d34836" ><i class="fa fa-google-plus-square fa-2x"></i></font></a>
             </td>
         </tr>
 

@@ -83,29 +83,19 @@ h2{
 }
 .checkdate{
     width: 50px;
-    max:31;
-    min:1;
     margin-left: 50px;
 }
 .checkyear{
     width: 80px;
-    max:2050;
-    min:2015;
 }
 .checkroom{
     width: 60px;
-    max:20;
-    min:1;
 }
 .checkmonth{
     width: 50px;
-    max:12;
-    min:1;
 }
-.checkperson{
+.checkperson {
     width: 50px;
-    max:10;
-    min:1;
 }
 #image1{
     margin-left: 100px;
@@ -144,10 +134,6 @@ th{
     padding-left: 245px;
     color: white;
     opacity: 0.3;
-}
-.table{
-    padding-left: 200px;
-    opacity: 0.5;
 }
 .pos{
     position: relative;
@@ -216,18 +202,16 @@ th{
 .shadow{
     text-shadow: 2px 2px 4px #000000;
 }
-.frame{
-    margin-top: -135px;
-    margin-left: 600px;
-}
 #mar{
     font-size: 25px;
     color: wheat;
     z-index: 5;
     position: absolute;
+    top: 125px;
 }
 .font{
     padding-left:5px;
+
 }
 #vid {
     width: 270px;
@@ -249,4 +233,44 @@ th{
     width: 60px;
     height: 30px;
     margin-left: -30px;
+}
+.button:hover,.button1:hover.button2:hover {
+    background-color: white;
+    opacity:1;
+}
+.font:hover,#font1:hover{
+    opacity:0.5;
+}
+ul.table li{
+    padding-left: 180px;
+    opacity: 0.5;
+
+}
+.blink {
+    animation-duration: 5s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    0% {
+        color: white;
+        opacity: 1;
+    }
+    25% {
+        color: blue;
+        opacity: 0.5;
+    }
+    50%{
+        color: brown;
+        opacity:0.5;
+    }
+    75% {
+        color:white
+        opacity: 0.75;
+    }
+    100% { color: red;
+        opacity: 1;
+    }
 }
