@@ -1,6 +1,4 @@
-#det{
-    padding-top: 50px;
-}
+
 #cust
 {
     background-image: url("image5.jpg");
@@ -115,7 +113,7 @@
     text-align: center;
     color: white;
     font-size: 70px;
-    margin-top: 230px;
+    margin-top: 175px;
 }
 iframe {
     width: 75%;
@@ -173,4 +171,36 @@ text-shadow: 3px 4px 4px black;
 @keyframes mymove1 {
     from {right: -250px;}
     to {right: 300px;}
+}
+.footer1{
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.51);
+    margin-left: -105px;
+}
+.r1{
+    width: 1300px;
+    text-align: center;
+    color:  #C36D37;
+    text-shadow: 2px 2px 4px #000000;
+}
+.boxes {
+    width: 1300px;
+    height: 410px;
+    background-image: url("1.jpg");
+    margin-top: -20px;
+    margin-left: 100px;
+}
+.image1{
+    height: 400px;
+    width: 400px;
+    border: 5px solid #B67B49;
+}
+.section5 {
+    height: 450px;
+    margin-top: 0;
+}
+.footer1 {
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.51);
+    margin-top: 25px;
 }
