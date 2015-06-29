@@ -159,7 +159,7 @@ th{
     opacity:0.2 ;
 }
 .section3{
-    height: 800px;
+    height: 750px;
     background-image:url("image5.jpg");
     background-size: 700px 800px;
     margin-left: 100px;
@@ -177,8 +177,8 @@ th{
 #hotel{
     float: right;
     width:615px;
-    height: 800px;
-    margin:-734px 105px 0px 0px;
+    height: 799px;
+    margin:-790px 105px 0px 0px;
 }
 .pos2{
     position: relative;

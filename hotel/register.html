@@ -43,9 +43,9 @@
                 </tr>
                 <tr>
                     <td class="shadow">Date Of Birth:</td>
-                    <td><input class="checkdate pos2" type="number" value= "dd" max="31" min="1" required>
-                        <input class="checkmonth pos2" type="number" value= "mm" max="12" min="1" required>
-                        <input class="checkyear pos2" type="number" value= "yyyy"  required><br><br></td>
+                    <td>
+                        <input type="date" name="bday" required>
+                        <br><br></td>
                 </tr>
                 <tr>
                     <td class="shadow">Telephone:</td>
@@ -61,6 +61,11 @@
     <td class="shadow">
         <input type="radio" name="sex" value="male" required>Male</td>
     <td class="shadow"><input class="shadow" type="radio" name="sex" value="female" required>Female</td></tr></table><br><br>
+            <tr>
+                <td>
+                    <input type="file" name="pic" accept="image/*">
+                    </td>
+            </tr><br><br>
 <input class="reg" type="submit" value="Register" >
 </form></i></b>
 <img id="hotel" src="hotel3.jpg">
