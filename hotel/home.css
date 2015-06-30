@@ -178,7 +178,7 @@ th{
     float: right;
     width:615px;
     height: 799px;
-    margin:-790px 105px 0px 0px;
+    margin:-730px 105px 0px 0px;
 }
 .pos2{
     position: relative;
@@ -286,4 +286,9 @@ ul.table li{
     width: 525px;
     float: right;
     margin-right: 135px;
+}
+.abc{
+    text-shadow: 2px 2px 4px #000000;
+
+
 }

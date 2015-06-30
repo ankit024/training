@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
     <link href="home.css" rel="stylesheet" type="text/css">
-</head>
+    <script src="register.js"></script>
+    <script>
+        var reg=function() {
+                    var studentname = document.getElementById('lname').value;
+                    console.log('ashbxhj', studentname)
+                    var student = {
+                        'fname': document.getElementById('fname').value,
+                        'lname': document.getElementById('lname').value,
+                        'pass': document.getElementById('pass').value,
+                        'dob': document.getElementById('dob').value,
+                        'tel': document.getElementById('tel').value,
+                        'add': document.getElementById('add').value,
+                        'pin': document.getElementById('pin').value,
+                        'male': document.getElementById('male').value,
+                        'female': document.getElementById('female').value,
+                        'res': document.getElementById('res').value
+                    };
+                    var student1 = JSON.stringify(student);
+                    localStorage.setItem('student', student1);
+                }
+</script>
+
+            </head>
 <body>
 <div class="header">
     <p class="blink" style="margin-left: 95px;color:white;padding-top: 20px">HOTEL</p><p class="blink" style="float: right;font-size: 25px;padding-right: 100px;color: white">0-895-806-47-87</p>
@@ -27,48 +49,44 @@
 
 <div class="section3">
     <b><i><h1 class="shadow">REGISTRATION</h1>
-        <form>
-            <table>
-                <tr>
-                    <td class="shadow">First Name:</td>
-                    <td><input class="pos2" type="text" name="firstname" required><br><br></td>
-                </tr>
-                <tr>
-                    <td class="shadow">Last Name:</td>
-                    <td><input class="pos2" type="text" name="lastname" required><br><br></td>
-                </tr>
-                <tr>
-                    <td class="shadow">Password:</td>
-                    <td><input class="pos2" type="password" name="pwd" required><br><br></td>
-                </tr>
-                <tr>
-                    <td class="shadow">Date Of Birth:</td>
-                    <td>
-                        <input type="date" name="bday" required>
-                        <br><br></td>
-                </tr>
-                <tr>
-                    <td class="shadow">Telephone:</td>
-                    <td><input class="pos2" type="text" name="telephone" required><br><br></td>
-                </tr>
-                <tr>
-                    <td class="shadow">Address:</td>
-                    <td><input class="pos2" type="text" name="address" required><br><br></td></tr>
-                <tr>
-     <td class="shadow">PinCode</td>
-<td><input class="pos2" type="text" name="pincode" required><br><br></td></tr>
-<tr>
-    <td class="shadow">
-        <input type="radio" name="sex" value="male" required>Male</td>
-    <td class="shadow"><input class="shadow" type="radio" name="sex" value="female" required>Female</td></tr></table><br><br>
-            <tr>
-                <td>
-                    <input type="file" name="pic" accept="image/*">
-                    </td>
-            </tr><br><br>
-<input class="reg" type="submit" value="Register" >
-</form></i></b>
-<img id="hotel" src="hotel3.jpg">
+        <form  name="registration" onsubmit="return formValidation();">
+
+
+                    <label class="shadow">First Name:</label>
+                    <label><input class="pos2" type="text" name="firstname" id="fname"><br><br></label>
+
+                    <label class="shadow">Last Name:</label>
+                    <label><input class="pos2" type="text" name="lastname" id="lname"><br><br></label>
+
+                    <label class="shadow">Password:</label>
+                    <label><input class="pos2" type="password" name="pwd" id="pass"><br><br></label>
+
+                    <label class="shadow">Date Of Birth:</label>
+                    <label>
+                        <input type="date" name="bday" id="dob">
+                        <br><br></label>
+
+                    <label class="shadow">Telephone:</label>
+                    <label><input class="pos2" type="text" name="telephone" id="tel"><br><br></label>
+
+                    <label class="shadow">Address:</label>
+                    <label><input class="pos2" type="text" name="address" id="add"><br><br></label>
+
+                    <label class="shadow">PinCode</label>
+                    <label><input class="pos2" type="text" name="pincode" id="pin"><br><br></label>
+                    <label class="shadow">
+                        <input type="radio" name="msex" value="male" id="male">Male</label>
+                    <label class="shadow"><input class="shadow" type="radio" name="fsex" value="female" id="female">Female</label>
+
+            <br><br>
+           <label>
+                    <input type="file" name="pic" accept="image/*" id="res">
+                </label>
+           <br><br>
+            <input class="reg" type="submit" value="Register" onclick="reg()" >
+    </form>
+    </i></b>
+    <img id="hotel" src="hotel3.jpg">
 </div>
 <div class="footer">
     <table> <tr>
