@@ -30,20 +30,21 @@
             </p>
         </tr>
         <tr><p>
-            <td class="pad">
-                 <b>Cst.Id</b>
-            </td>
+
             <td class="pad">
                  <b>Name</b>
-            </td>
+            </td> <td class="pad">
+            <b>LastName</b>
+        </td>
+
             <td class="pad">
                 <b>Phone</b>
             </td>
             <td class="pad">
-                 <b>City</b>
+                <b>Country</b>
             </td>
             <td class="pad">
-                 <b>No.of Rooms</b>
+                 <b>City</b>
             </td>
             <td class="pad">
                 <b>Arrival Date</b>
@@ -54,66 +55,35 @@
             <td></td><td></td></p>
         </tr>
         <tr>
-            <td class="sc pad1">
-                01
+            <td class="sc pad1" id="fname">
+
             </td>
-            <td  class="sc pad1">
-                Ankit
+            <td  class="sc pad1" id="lname">
+
             </td>
-            <td class="sc pad1">
-                7854757888
+            <td class="sc pad1" id="ph">
+            </td>
+            <td class="sc pad1" id="count">
             </td>
 
-            <td class="sc pad1">
-               kanpur
+            <td class="sc pad1" id="cit">
+
+            </td>
+            <td class="sc pad1" id="arrive">
+
+            </td>
+            <td class="sc pad1" id="stay">
+
             </td>
             <td class="sc pad1">
-                1
-        </td>
-            <td class="sc pad1">
-                15-june-2015
-            </td>
-            <td class="sc pad1">
-                20-june-2015
-            </td>
-            <td class="sc pad1">
-                <input type="checkbox">
+                <button class="btn1" onclick="del()"><i class="fa fa-trash-o"></i></button>
+
             </td>
             <td>
                 <button class="btn1"><i class="fa fa-pencil-square-o"></i></button>
             </td>
         </tr>
-        <tr>
-            <td class="sc pad1">
-                01
-            </td>
-            <td  class="sc pad1">
-                Ankit
-            </td>
-            <td class="sc pad1">
-                7854757888
-            </td>
-
-            <td class="sc pad1">
-                kanpur
-            </td>
-            <td class="sc pad1">
-                1
-            </td>
-            <td class="sc pad1">
-                15-june-2015
-            </td>
-            <td class="sc pad1">
-                20-june-2015
-            </td>
-            <td class="sc pad1">
-                <input type="checkbox">
-            </td>
-            <td>
-                <button class="btn1"><i class="fa fa-pencil-square-o"></i></button>
-            </td>
-        </tr>
-        <tr>
+       <!-- <tr>
             <td class="sc pad1">
                 01
             </td>
@@ -323,11 +293,62 @@
                 <button class="btn1"><i class="fa fa-pencil-square-o"></i></button>
             </td>
         </tr>
+        <tr>
+            <td class="sc pad1">
+                01
+            </td>
+            <td  class="sc pad1">
+                Ankit
+            </td>
+            <td class="sc pad1">
+                7854757888
+            </td>
+
+            <td class="sc pad1">
+                kanpur
+            </td>
+            <td class="sc pad1">
+                1
+            </td>
+            <td class="sc pad1">
+                15-june-2015
+            </td>
+            <td class="sc pad1">
+                20-june-2015
+            </td>
+            <td class="sc pad1">
+                <input type="checkbox">
+            </td>
+            <td>
+                <button class="btn1"><i class="fa fa-pencil-square-o"></i></button>
+            </td>
+        </tr>-->
         </table>
-        <button  class="button4"><font size="3">Delete</font></button>
         <button class="button4"><font size="3">Reset</font></button>
         <button class="button4"><font size="3">Submit</font></button>
 
 </div>
     </body>
 </html>
+<script>
+
+
+    booking1 = localStorage.getItem('booking');
+    booking1 = JSON.parse(booking1);
+
+
+
+    document.getElementById("fname").innerHTML = booking1.fstname;
+    document.getElementById("lname").innerHTML = booking1.lstname;
+    document.getElementById("ph").innerHTML = booking1.phone;
+    document.getElementById("count").innerHTML = booking1.country;
+    document.getElementById("cit").innerHTML = booking1.city;
+    document.getElementById("arrive").innerHTML = booking1.arrival;
+    document.getElementById("stay").innerHTML = booking1.end1;
+    var del=function()
+    {
+        localStorage.removeItem("booking");
+
+    }
+
+</script>

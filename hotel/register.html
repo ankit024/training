@@ -7,8 +7,6 @@
     <script src="register.js"></script>
     <script>
         var reg=function() {
-                    var studentname = document.getElementById('lname').value;
-                    console.log('ashbxhj', studentname)
                     var student = {
                         'fname': document.getElementById('fname').value,
                         'lname': document.getElementById('lname').value,
@@ -49,7 +47,7 @@
 
 <div class="section3">
     <b><i><h1 class="shadow">REGISTRATION</h1>
-        <form  name="registration" onsubmit="return formValidation();">
+        <form action="login.html" name="registration" onsubmit="return formValidation();">
 
 
                     <label class="shadow">First Name:</label>
@@ -83,7 +81,7 @@
                     <input type="file" name="pic" accept="image/*" id="res">
                 </label>
            <br><br>
-            <input class="reg" type="submit" value="Register" onclick="reg()" >
+            <input class="reg1" type="submit" value="Register" onclick="reg()" >
     </form>
     </i></b>
     <img id="hotel" src="hotel3.jpg">

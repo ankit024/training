@@ -9,8 +9,9 @@
     margin-left: 100px;
     margin-right: 50px;
     background-size:100%;
-    margin-top: 10px;
+    margin-top: 2px;
     padding-left: 10px;
+    padding-top: 10px;
 }
 .text
 {
@@ -35,6 +36,8 @@
     text-shadow: 3px 4px 16px black;
     font-size: 35px;
     color: brown;
+    position:relative;
+    top:-30px;
 }
 .button4{
     width: 213px;
@@ -48,7 +51,7 @@
     margin-left: 317px;
     margin-right: 50px;
     background-size: 100% 150%;
-    padding-left: 213px;
+
     width: 655px;
 }
 .book2 {
@@ -203,4 +206,10 @@ text-shadow: 3px 4px 4px black;
     height: 150px;
     background-color: rgba(0, 0, 0, 0.51);
     margin-top: 25px;
+}
+.textnew{
+    line-height: 40px;
+padding-top:60px;
+    text-align: center;
+    color: red;
 }

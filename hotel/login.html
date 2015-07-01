@@ -6,7 +6,6 @@
 </head>
 
 <body>
-<div class="header">
     <div class="header">
         <p class="blink" style="margin-left: 95px;color:white;padding-top: 20px">HOTEL</p><p class="blink" style="float: right;font-size: 25px;padding-right: 100px;color: white">0-895-806-47-87</p>
         <p class="blink" style="font-size: 40px; margin-top: -20px;margin-left: 95px;color:white"> FIVE STAR</p>
@@ -29,17 +28,19 @@
     <div class="box4">
         <div class="box3">
             <b><i><h1 id="sin">SignIn</h1></i></b>
+            <form method="post">
             <table>
                 <b><i> <tr>
                     <td>User Name:</td>
-                    <td><input class="pos2 log" type="text" name="Username" required/><br><br></td>
+                    <td><input class="pos2 log" type="text" name="Username" id="em" required/><br><br></td>
                 </tr>
                     <tr>
                         <td>Password:</td>
-                        <td><input class="pos2 log" type="text" name="pswrd" required/><br><br></td>
+                        <td><input class="pos2 log" type="password" name="ps" id="ps" required/><br><br></td>
                     </tr>
                 </i></b> </table><br>
-            <input class="in" type="submit" value="Login" onclick="window.location.href='detail.html'">
+            <input class="in" type="submit" value="Login" onclick="log()">
+                </form>
         </div>
     </div>
 </div>
@@ -87,3 +88,30 @@
 </body>
 
 </html>
+<script>
+
+    var log=function()
+    {
+    student1 = localStorage.getItem('student');
+    student1 = JSON.parse(student1);
+
+    var e1 = document.getElementById("em").value;
+    var p1=document.getElementById("ps").value;
+
+    var e2=student1.fname;
+    var p2=student1.pass;
+
+    if(e1 != e2 || p1 != p2)
+    {
+        alert("invalid user id or password");
+    }
+    else
+    {
+        alert("valid ");
+
+        window.loction='details.html'
+    }
+
+    }
+
+</script>
