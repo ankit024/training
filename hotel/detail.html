@@ -2,40 +2,41 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
+    <!--<link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">-->
     <link href="home.css" rel="stylesheet" type="text/css">
     <link href="detail.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<style>
+    #my-table tr {
+        padding-left: 10px;
+    }
+</style>
 <div class="header">
-    <p>HOTEL</p><p style="float: right;font-size: 25px">0-895-806-47-87</p>
-    <p  style="font-size: 40px; margin-top: -20px"> FIVE STAR</p>
-    <p style="font-size: 15px;margin-top: -40px"> True Luxery</p>
-    </div>
-        <div id="det" class="nav">
-            <button class="button" type="button" onclick="window.location.href='home.html'" ><b>HOME PAGE</b></button>
-            <button class="button" type="button" onclick="window.location.href='gallary.html'" ><b>GALLERY</b></button>
-            <button class="button" type="button" onclick="window.location.href='http://luxurytravel.about.com/od/hotelandresorts/tp/Five-Star-Hotels-Great-Hospitality-Service.htm'" ><b>SERVICES</b></button>
-            <button class="button" type="button" onclick="window.location.href='restaurant.html'" ><b>RESTAURANT</b></button>
-            <button class="button" type="button" onclick="window.location.href='booking.html'" ><b>BOOKING</b></button>
-            <button class="button" type="button" onclick="window.location.href='profile.html'" ><b>ABOUT US</b></button>
-        </div>
+    <p class="blink" style="margin-left: 95px;color:white;padding-top: 20px">HOTEL</p><p class="blink" style="float: right;font-size: 25px;padding-right: 100px;color: white">0-895-806-47-87</p>
+    <p class="blink" style="font-size: 40px; margin-top: -20px;margin-left: 95px;color:white"> FIVE STAR</p>
+    <p class="blink" style="font-size: 15px;margin-top: -40px;margin-left: 95px;color:white"> True Luxery</p>
+    <p><marquee id="mar">Special Offer!When it's time for a getaway, Hotel Five Star offers unique travel packages and hotel discounts.</marquee></p>
+</div>
+<div id="det" class="nav">
+    <button class="button" type="button" onclick="window.location.href='home.html'" ><b>HOME PAGE</b></button>
+    <button class="button" type="button" onclick="window.location.href='gallary.html'" ><b>GALLERY</b></button>
+    <button class="button" type="button" onclick="window.location.href='http://luxurytravel.about.com/od/hotelandresorts/tp/Five-Star-Hotels-Great-Hospitality-Service.htm'" ><b>SERVICES</b></button>
+    <button class="button" type="button" onclick="window.location.href='restaurant.html'" ><b>RESTAURANT</b></button>
+    <button class="button" type="button" onclick="window.location.href='booking.html'" ><b>BOOKING</b></button>
+    <button class="button" type="button" onclick="window.location.href='profile.html'" ><b>ABOUT US</b></button>
+</div>
 <div id="cust" class="text">
+    <h2 class="pad2">  <b><i>Customer Details</i></b></h2>
     <table class="text" style="padding-left: 30px;" >
-        <tr>
-            <p>
-            <td class="pad2" colspan="8">
-              <b><i>Customer Details</i></b>
-            </td>
-            </p>
-        </tr>
+        <thead>
         <tr><p>
 
             <td class="pad">
-                 <b>Name</b>
+                <b>Name</b>
             </td> <td class="pad">
-            <b>LastName</b>
-        </td>
+                <b>LastName</b>
+            </td>
 
             <td class="pad">
                 <b>Phone</b>
@@ -44,34 +45,34 @@
                 <b>Country</b>
             </td>
             <td class="pad">
-                 <b>City</b>
+                <b>City</b>
             </td>
             <td class="pad">
                 <b>Arrival Date</b>
             </td>
             <td class="pad">
-                 <b>End Of Stay</b>
+                <b>End Of Stay</b>
             </td>
             <td></td><td></td></p>
         </tr>
-        <tbody id="my-table">
 
+        </thead>
+
+        <tbody id="my-table">
         </tbody>
 
-        </table>
+    </table>
 </div>
 <script type="text/javascript">
     function tableCreate() {
-      /*  var body = document.body,
-                tbl = document.createElement('table');*/
+        console.log("========enter in=====")
         var tbl = document.getElementById('my-table');
         tbl.style.width = '100%';
         tbl.style.color ="brown";
-        tbl.paddingLeft ="30px"
- var data1 = [];
-
+        var data1 = [];
         for (i = 0; i<localStorage.length; i++) {
             var tr = tbl.insertRow(i);
+            tr.style.padding = '10px'
             data1[i] = JSON.parse(localStorage.getItem(localStorage.key(i)));
             console.log("data1===", data1[i])
             var cell1 =tr.insertCell(0);
@@ -81,41 +82,22 @@
             var cell5 = tr.insertCell(4);
             var cell6 = tr.insertCell(5);
             var cell7 = tr.insertCell(6);
-
-                    cell1.innerHTML =data1[i].fstname;
-                    cell2.innerHTML =data1[i].lstname;
-                    cell3.innerHTML=data1[i].phone;
-                    cell4.innerHTML =data1[i].country;
-                    cell5.innerHTML =data1[i].city;
-                    cell6.innerHTML=data1[i].arrival;
-                            cell7.innerHTML=data1[i].end1;
-
-
+            cell1.innerHTML =data1[i].fstname;
+            cell2.innerHTML =data1[i].lstname;
+            cell3.innerHTML=data1[i].phone;
+            cell4.innerHTML =data1[i].country;
+            cell5.innerHTML =data1[i].city;
+            cell6.innerHTML=data1[i].arrival;
+            cell7.innerHTML=data1[i].end1;
         }
-//        body.appendChild(tbl);
-    }
+        var els = document.getElementById("my-table").getElementsByTagName("td");
 
+        for(var i=0;i<els.length;i++){
+            els[i].style.padding = "0 0 0 40px";
+        }
+    }
     tableCreate();
 </script>
 
-    </body>
+</body>
 </html>
-<!--
-<script>
-var data = localStorage.getItem('itemsArray')
-var data1= JSON.parse(data)
-console.log(data, data.length)
-console.log(data1[0])
-
-    document.getElementById('test').innerHTML = data1[0].fstname;
-document.getElementById('test').innerHTML = data1[1].fstname
-//    all1[i] = JSON.parse(all[i]);
-    /*document.getElementsByClassName('one').innerHTML = all1[i].fstname;
-    document.getElementsByClassName('two').innerHTML = all1[i].lstname;
-    document.getElementsByClassName('three').innerHTML = all1[i].phone;
-    document.getElementsByClassName('four').innerHTML = all1[i].country;
-    document.getElementsByClassName('five').innerHTML = all1[i].city;
-    document.getElementsByClassName('six').innerHTML = all1[i].arrival;
-    document.getElementsByClassName('seven').innerHTML = all1[i].end1;*/-->
-
-

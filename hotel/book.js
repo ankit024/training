@@ -180,7 +180,9 @@ function kids_validation(ukids,mx,my) {
     else
     {
         alert('form successfully submitted');
-        return true;
+
+        return true
+
 
     }
 }

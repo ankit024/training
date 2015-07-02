@@ -8,7 +8,6 @@
     <script src="book.js"></script>
     <script>
         var book=function() {
-
             var booking = {
                 'fstname': document.getElementById('fstname').value,
                 'lstname': document.getElementById('lstname').value,
@@ -23,31 +22,26 @@
                 'adult': document.getElementById('adults').value,
                 'kid': document.getElementById('kids').value
             };
-
             var booking1 = JSON.stringify(booking);
             localStorage.setItem(booking.email, booking1);
-
             alert("form submitted");
-
-           /*var oldItems = JSON.parse(localStorage.getItem('itemsArray')) || [];
-
-                var booking = {
-                    'fstname': document.getElementById('fstname').value,
-                    'lstname': document.getElementById('lstname').value,
-                    'phone': document.getElementById('phone').value,
-                    'country': document.getElementById('country').value,
-                    'city': document.getElementById('city').value,
-                    'zip': document.getElementById('zip').value,
-                    'address': document.getElementById('address').value,
-                    'email': document.getElementById('email').value,
-                    'arrival': document.getElementById('arrival').value,
-                    'end1': document.getElementById('end').value,
-                    'adult': document.getElementById('adults').value,
-                    'kid': document.getElementById('kids').value
-                };
-
-                oldItems.push(booking);
-                localStorage.setItem('itemsArray', JSON.stringify(oldItems));*/
+            /*var oldItems = JSON.parse(localStorage.getItem('itemsArray')) || [];
+             var booking = {
+             'fstname': document.getElementById('fstname').value,
+             'lstname': document.getElementById('lstname').value,
+             'phone': document.getElementById('phone').value,
+             'country': document.getElementById('country').value,
+             'city': document.getElementById('city').value,
+             'zip': document.getElementById('zip').value,
+             'address': document.getElementById('address').value,
+             'email': document.getElementById('email').value,
+             'arrival': document.getElementById('arrival').value,
+             'end1': document.getElementById('end').value,
+             'adult': document.getElementById('adults').value,
+             'kid': document.getElementById('kids').value
+             };
+             oldItems.push(booking);
+             localStorage.setItem('itemsArray', JSON.stringify(oldItems));*/
         }
     </script>
 </head>
@@ -95,21 +89,21 @@
         <label><input type="text" name="address" id="address" size="10"></label>
 
         <label >Email:</label>
-        <label><input id="email" type="text" name="email"><br><br></label>
+        <label><input id="email" type="text" name="email" size="10"><br><br></label>
 
         <label >arrival</label>
-        <label><input type="date" name="arrival" id="arrival"></label>
+        <label><input type="date" name="arrival" id="arrival" size="10"></label>
 
 
 
         <label >End of stay</label>
-        <label><input type="date" name="stay" id="end"><br><br></label>
+        <label><input type="date" name="stay" id="end" size="10"><br><br></label>
 
         <label >adults</label>
         <label><input type="text" name="adults" id="adults" size="10"></label>
 
         <label >kids</label>
-        <label><input type="text" name="kids" id="kids"><br><br></label>
+        <label><input type="text" name="kids" id="kids" size="10"><br><br></label>
 
         <br><br>
 
