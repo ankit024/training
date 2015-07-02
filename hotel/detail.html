@@ -55,24 +55,25 @@
             <td></td><td></td></p>
         </tr>
         <tr>
-            <td class="sc pad1" id="fname">
+            <td id="test"></td>
+            <td class="sc pad1 one" id="fname">
 
             </td>
-            <td  class="sc pad1" id="lname">
+            <td  class="sc pad1 two" id="lname">
 
             </td>
-            <td class="sc pad1" id="ph">
+            <td class="sc pad1 three" id="ph">
             </td>
-            <td class="sc pad1" id="count">
+            <td class="sc pad1 four" id="count">
             </td>
 
-            <td class="sc pad1" id="cit">
+            <td class="sc pad1 five" id="cit">
 
             </td>
-            <td class="sc pad1" id="arrive">
+            <td class="sc pad1 six" id="arrive">
 
             </td>
-            <td class="sc pad1" id="stay">
+            <td class="sc pad1 seven" id="stay">
 
             </td>
             <td class="sc pad1">
@@ -331,24 +332,23 @@
     </body>
 </html>
 <script>
+var data = localStorage.getItem('itemsArray')
+var data1= JSON.parse(data)
+console.log(data, data.length)
+console.log(data1[0])
 
-
-    booking1 = localStorage.getItem('booking');
-    booking1 = JSON.parse(booking1);
-
-
-
-    document.getElementById("fname").innerHTML = booking1.fstname;
-    document.getElementById("lname").innerHTML = booking1.lstname;
-    document.getElementById("ph").innerHTML = booking1.phone;
-    document.getElementById("count").innerHTML = booking1.country;
-    document.getElementById("cit").innerHTML = booking1.city;
-    document.getElementById("arrive").innerHTML = booking1.arrival;
-    document.getElementById("stay").innerHTML = booking1.end1;
-    var del=function()
+    document.getElementById('test').innerHTML = data1[0].fstname;
+document.getElementById('test').innerHTML = data1[1].fstname
+//    all1[i] = JSON.parse(all[i]);
+    /*document.getElementsByClassName('one').innerHTML = all1[i].fstname;
+    document.getElementsByClassName('two').innerHTML = all1[i].lstname;
+    document.getElementsByClassName('three').innerHTML = all1[i].phone;
+    document.getElementsByClassName('four').innerHTML = all1[i].country;
+    document.getElementsByClassName('five').innerHTML = all1[i].city;
+    document.getElementsByClassName('six').innerHTML = all1[i].arrival;
+    document.getElementsByClassName('seven').innerHTML = all1[i].end1;*/
+ var del=function()
     {
         localStorage.removeItem("booking");
-
     }
-
 </script>
