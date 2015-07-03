@@ -6,27 +6,9 @@
     <link href="home.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="register.js"></script>
-    <script>
-        var reg=function() {
-                    var student = {
-                        'fname': document.getElementById('fname').value,
-                        'lname': document.getElementById('lname').value,
-                        'pass': document.getElementById('pass').value,
-                        'dob': document.getElementById('dob').value,
-                        'tel': document.getElementById('tel').value,
-                        'add': document.getElementById('add').value,
-                        'pin': document.getElementById('pin').value,
-                        'male': document.getElementById('male').value,
-                        'female': document.getElementById('female').value,
-                        'res': document.getElementById('res').value
-                    };
-                    var student1 = JSON.stringify(student);
-                    localStorage.setItem('student', student1);
 
-                }
-</script>
 
-            </head>
+</head>
 <body>
 <div class="header">
     <p class="blink" style="margin-left: 95px;color:white;padding-top: 20px">HOTEL</p><p class="blink" style="float: right;font-size: 25px;padding-right: 100px;color: white">0-895-806-47-87</p>
@@ -49,44 +31,44 @@
 
 <div class="section3">
     <b><i><h1 class="shadow">REGISTRATION</h1>
-        <form action="login.html"  name="registration" onsubmit="return formValidation();">
+        <form >
 
 
-                    <label class="shadow">First Name:</label>
-                    <label><input class="pos2" type="text" name="firstname" id="fname" style="left: 26px"><br><br></label>
+            <label class="shadow">First Name:</label>
+            <label><input class="pos2" type="text" name="firstname" id="fname" style="left: 26px"><br><br></label>
 
-                    <label class="shadow">Last Name:</label>
-                    <label><input class="pos2" type="text" name="lastname" id="lname" style="left: 32px"><br><br></label>
+            <label class="shadow">Last Name:</label>
+            <label><input class="pos2" type="text" name="lastname" id="lname" style="left: 32px"><br><br></label>
 
-                    <label class="shadow">Password:</label>
-                    <label><input class="pos2" type="password" name="pwd" id="pass" style="left: 50px"><br><br></label>
+            <label class="shadow">Password:</label>
+            <label><input class="pos2" type="password" name="pwd" id="pass" style="left: 50px"><br><br></label>
 
-                    <label class="shadow">Date Of Birth:</label>
-                    <label>
-                        <input type="date" name="bday" id="dob">
-                        <br><br></label>
+            <label class="shadow">Date Of Birth:</label>
+            <label>
+                <input type="date" name="bday" id="dob">
+                <br><br></label>
 
-                    <label class="shadow">Telephone:</label>
-                    <label><input class="pos2" type="text" name="telephone" id="tel" style="left: 36px"><br><br></label>
+            <label class="shadow">Telephone:</label>
+            <label><input class="pos2" type="text" name="telephone" id="tel" style="left: 36px"><br><br></label>
 
-                    <label class="shadow">Address:</label>
-                    <label><input class="pos2" type="text" name="address" id="add" style="left: 65px"><br><br></label>
+            <label class="shadow">Address:</label>
+            <label><input class="pos2" type="text" name="address" id="add" style="left: 65px"><br><br></label>
 
-                    <label class="shadow">PinCode:</label>
-                    <label><input class="pos2" type="text" name="pincode" id="pin" style="left: 60px"><br><br></label>
-                    <label class="shadow">
-                        <input type="radio" name="msex" value="male" id="male">Male</label>
-                    <label class="shadow"><input class="shadow" type="radio" name="fsex" value="female" id="female" style="padding-left:80px ">Female</label>
+            <label class="shadow">PinCode:</label>
+            <label><input class="pos2" type="text" name="pincode" id="pin" style="left: 60px"><br><br></label>
+            <label class="shadow">
+                <input type="radio" name="msex" value="male" id="male">Male</label>
+            <label class="shadow"><input class="shadow" type="radio" name="fsex" value="female" id="female" style="padding-left:80px ">Female</label>
 
             <br><br>
-           <label>
-                    <input type="file" name="pic" accept="image/*" id="res" style="padding-left: 10px">
-                </label>
-            <img id="img" src="" width="200" style="display:none; position: relative; left: -115px" />
-            <input type="submit" name="upload" style="position: relative; left: -100px"  value="upload" onclick="update();"/>
-           <br><br>
-            <input class="reg1" type="submit" value="Register" onclick="reg()" >
-    </form>
+            <label>
+                <input type="file" name="pic" accept="image/*" id="res" style="padding-left: 10px">
+            </label>
+            <img id="img" src="" width="200" style="display:none;" />
+            <input type="submit" name="feedback" value="feedback" onclick="update()"/>
+            <br><br>
+            <input class="reg1" type="submit" value="Register"  >
+        </form>
     </i></b>
     <img id="hotel" src="hotel3.jpg">
 </div>
